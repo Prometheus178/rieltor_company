@@ -6,6 +6,8 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 public class HouseInNewComplexDAOImpl implements HouseInNewComplexDAO {
 
@@ -29,5 +31,11 @@ public class HouseInNewComplexDAOImpl implements HouseInNewComplexDAO {
 
     public HouseInNewComplex updateHouseByID(int idHouse) {
         return null;
+    }
+
+    public List<HouseInNewComplex> listOfHouseInNewComplex() {
+        Session session = sessionFactory.getCurrentSession();
+        List<HouseInNewComplex> list = session.createQuery("from HouseInNewComplex").list();
+        return list;
     }
 }

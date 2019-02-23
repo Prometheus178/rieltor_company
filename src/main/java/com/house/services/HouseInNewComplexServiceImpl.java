@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 @Service
 public class HouseInNewComplexServiceImpl implements HouseInNewComplexService {
 
@@ -20,13 +22,21 @@ public class HouseInNewComplexServiceImpl implements HouseInNewComplexService {
     public void addHouse(HouseInNewComplex houseInNewComplex) {
         houseInNewComplexDAO.addHouse(houseInNewComplex);
     }
-
+    @Transactional
     public boolean deleteHouseByID(int idHouse) {
         houseInNewComplexDAO.deleteHouseByID(idHouse);
         return true;
     }
 
     public HouseInNewComplex updateHouseByID(int idHouse) {
+        return null;
+    }
+    @Transactional
+    public List<HouseInNewComplex> listOfHouseInNewComplex() {
+        return houseInNewComplexDAO.listOfHouseInNewComplex();
+    }
+
+    public HouseInNewComplex getHouseByID(int idHouse) {
         return null;
     }
 }

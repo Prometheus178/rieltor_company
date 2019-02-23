@@ -6,6 +6,8 @@
     <title>MainPage</title>
 </head>
 <body>
+
+<hr/>
 <div>
     <label>add House</label>
     <form action="/addHouseInNewComplex" , method="post">
@@ -33,11 +35,38 @@
         Message = <span th:text="${addMessage}"></span>
     </div>
 </div>
-
+<hr/>
 <div>
-    <label></label>
-
+    <label>list</label>
+    <div th:if="${not #lists.isEmpty(listOfHouseInNewComplex)}">
+        <table>
+            <thead>
+            <tr>
+                <th> nameOfComplex;</th>
+                <th> nameOfHouse;</th>
+                <th> floor;</th>
+                <th>  apartment;</th>
+                <th> square;</th>
+                <th>  price;</th>
+                <th> fullPrice;</th>
+                <th>  status;</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="house : ${listOfHouseInNewComplex}">
+                <td th:text="${house.nameOfComplex}">nameOfComplex</td>
+                <td th:text="${house.nameOfHouse}"></td>
+                <td th:text="${house.floor}"></td>
+                <td th:text="${house.apartment}"></td>
+                <td th:text="${house.square}"></td>
+                <td th:text="${house.price}"></td>
+                <td th:text="${house.fullPrice}"></td>
+                <td th:text="${house.status}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
+<hr/>
 </body>
 </html>
-

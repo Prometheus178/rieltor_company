@@ -6,6 +6,8 @@ import com.house.services.HouseInNewComplexService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -19,8 +21,10 @@ public class HouseInNewComplexController {
     private HouseInNewComplexService service;
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String main(){
-        return "main";
+    public ModelAndView listOfHouseInNewComplex(){
+        ModelAndView modelAndView = new ModelAndView("main");
+        modelAndView.addObject("listOfHouseInNewComplex", service.listOfHouseInNewComplex());
+        return modelAndView;
     }
 
     @RequestMapping(value = "/addHouseInNewComplex" , method = RequestMethod.POST)
@@ -52,13 +56,17 @@ public class HouseInNewComplexController {
         }
 
     }
-    @RequestMapping(name = "/removeHouseFromNewComplex", method = RequestMethod.GET)
-    public ModelAndView removeHouseFromNewComplex(HouseInNewComplex houseInNewComplex){
-        ModelAndView modelAndView = new ModelAndView("main");
 
-        service.deleteHouseByID(1);
-        modelAndView.addObject("removed");
-        return modelAndView;
+
+
+    @RequestMapping(name = "/removeHouseFromNewComplex/{idHouse}", method = RequestMethod.GET)
+    public String removeHouseFromNewComplex(@PathVariable("idHouse") int idHouse, Model model){
+        if (service.deleteHouseByID(idHouse)){
+            model.addAttribute("removed");
+        }else {
+            model.addAttribute("something wrong");
+        }
+        return "main";
     }
 
 
