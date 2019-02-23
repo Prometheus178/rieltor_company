@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" media="all" href="/resources/css/main.css">
+    <title>MainPage</title>
+</head>
+<body>
+<div>
+    <label>add House</label>
+    <form action="/addHouseInNewComplex" , method="post">
+        <div>
+            String nameOfComplex <input type="text" name="nameOfComplex" id="nameOfComplex">
+            String nameOfHouse <input type="text" name="nameOfHouse" id="nameOfHouse">
+            int floor <input type="number" name="floor" id="floor">
+            int apartment <input type="number" name="apartment" id="apartment">
+            double square <input type="number" name="square" id="square">
+            int price <input type="number" name="price" id="price">
+            int fullPrice <input type="number" name="fullPrice" id="fullPrice">
+            Status status
+            <select name="status" id="status">
+                <option value="" selected disabled hidden>Выберите статус</option>
+                <option th:each="status : ${T(com.house.entities.Status).values()}"
+                        th:value="${status}"
+                        th:text="${status.getValue()}">
+                </option>
+            </select>
+        </div>
+        <input type="submit" value="Save"/>
+        <input type="reset" value="Reset"/>
+    </form>
+    <div>
+        Message = <span th:text="${addMessage}"></span>
+    </div>
+</div>
+
+<div>
+    <label></label>
+
+</div>
+</body>
+</html>
+
