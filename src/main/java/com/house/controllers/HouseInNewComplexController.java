@@ -59,7 +59,7 @@ public class HouseInNewComplexController {
 
 
 
-    @RequestMapping(name = "/removeHouseFromNewComplex/{idHouse}", method = RequestMethod.GET)
+    @RequestMapping(value = "/removeHouseFromNewComplex/{idHouse}", method = RequestMethod.GET)
     public String removeHouseFromNewComplex(@PathVariable("idHouse") int idHouse, Model model){
         if (service.deleteHouseByID(idHouse)){
             model.addAttribute("removed");
