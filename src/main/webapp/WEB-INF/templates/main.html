@@ -15,9 +15,10 @@
             String nameOfComplex <input type="text" name="nameOfComplex" id="nameOfComplex">
             String nameOfHouse <input type="text" name="nameOfHouse" id="nameOfHouse">
             int floor <input type="number" name="floor" id="floor">
-            int apartment <input type="number" name="apartment" id="apartment">
+            int numberOfApartment <input type="number" name="numberOfApartment" id="numberOfApartment">
+            int numberOfRoom <input type="number" name="numberOfRoom" id="numberOfRoom">
             double square <input type="number" name="square" id="square">
-            int price <input type="number" name="price" id="price">
+            int pricePerSquare <input type="number" name="pricePerSquare" id="pricePerSquare">
             int fullPrice <input type="number" name="fullPrice" id="fullPrice">
             Status status
             <select name="status" id="status">
@@ -45,28 +46,35 @@
                 <th> nameOfComplex;</th>
                 <th> nameOfHouse;</th>
                 <th> floor;</th>
-                <th>  apartment;</th>
+                <th>  numberOfApartment;</th>
+                <th>  numberOfRoom;</th>
                 <th> square;</th>
-                <th>  price;</th>
+                <th>  pricePerSquare;</th>
                 <th> fullPrice;</th>
                 <th>  status;</th>
                 <th> edit </th>
                 <th> delete </th>
+                <th> request </th>
             </tr>
             </thead>
             <tbody>
-            <tr th:each="house : ${listOfHouseInNewComplex}">
-                <td th:text="${house.nameOfComplex}">nameOfComplex</td>
-                <td th:text="${house.nameOfHouse}"></td>
-                <td th:text="${house.floor}"></td>
-                <td th:text="${house.apartment}"></td>
-                <td th:text="${house.square}"></td>
-                <td th:text="${house.price}"></td>
-                <td th:text="${house.fullPrice}"></td>
-                <td th:text="${house.status}"></td>
-                <td> <a th:href="@{'/edit/' + ${house.idHouse}}">edit</a></td>
-                <td> <a th:href="@{'/removeHouseFromNewComplex/' + ${house.idHouse}}">delete</a></td>
-            </tr>
+                <tr th:each="house : ${listOfHouseInNewComplex}">
+                    <td th:text="${house.nameOfComplex}">nameOfComplex</td>
+                    <td th:text="${house.nameOfHouse}"></td>
+                    <td th:text="${house.floor}"></td>
+                    <td th:text="${house.numberOfApartment}"></td>
+                    <td th:text="${house.numberOfRoom}"></td>
+                    <td th:text="${house.square}"></td>
+                    <td th:text="${house.pricePerSquare}"></td>
+                    <td th:text="${house.fullPrice}"></td>
+                    <td th:text="${house.status}"></td>
+                    <td> <a th:href="@{'/edit/' + ${house.idHouse}}">edit</a></td>
+                    <td> <a th:href="@{'/removeHouseFromNewComplex/' + ${house.idHouse}}">delete</a></td>
+                    <div th:switch="${house.status}">
+                        <td th:case="${house.status.AVAILABLE}"> <a th:href="@{'/'}">request</a></td>
+                    </div>
+
+                </tr>
             </tbody>
         </table>
     </div>

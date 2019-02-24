@@ -13,22 +13,23 @@ public class HouseInNewComplex {
     private String nameOfComplex;
     private String nameOfHouse;
     private int floor;
-    private int apartment;
+    private int numberOfApartment;
+    private int numberOfRoom;
     private double square;
-    private int price;
+    private int pricePerSquare;
     private int fullPrice;
     private Status status;
 
-    public HouseInNewComplex() {
-    }
+    HouseInNewComplex(){}
 
-    public HouseInNewComplex(String nameOfComplex, String nameOfHouse, int floor, int apartment, double square, int price, int fullPrice, Status status) {
+    public HouseInNewComplex(String nameOfComplex, String nameOfHouse, int floor, int numberOfApartment, int numberOfRoom, double square, int pricePerSquare, int fullPrice, Status status) {
         this.nameOfComplex = nameOfComplex;
         this.nameOfHouse = nameOfHouse;
         this.floor = floor;
-        this.apartment = apartment;
+        this.numberOfApartment = numberOfApartment;
+        this.numberOfRoom = numberOfRoom;
         this.square = square;
-        this.price = price;
+        this.pricePerSquare = pricePerSquare;
         this.fullPrice = fullPrice;
         this.status = status;
     }
@@ -65,12 +66,20 @@ public class HouseInNewComplex {
         this.floor = floor;
     }
 
-    public int getApartment() {
-        return apartment;
+    public int getNumberOfApartment() {
+        return numberOfApartment;
     }
 
-    public void setApartment(int apartment) {
-        this.apartment = apartment;
+    public void setNumberOfApartment(int numberOfApartment) {
+        this.numberOfApartment = numberOfApartment;
+    }
+
+    public int getNumberOfRoom() {
+        return numberOfRoom;
+    }
+
+    public void setNumberOfRoom(int numberOfRoom) {
+        this.numberOfRoom = numberOfRoom;
     }
 
     public double getSquare() {
@@ -81,12 +90,12 @@ public class HouseInNewComplex {
         this.square = square;
     }
 
-    public int getPrice() {
-        return price;
+    public int getPricePerSquare() {
+        return pricePerSquare;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
+    public void setPricePerSquare(int pricePerSquare) {
+        this.pricePerSquare = pricePerSquare;
     }
 
     public int getFullPrice() {
@@ -103,20 +112,5 @@ public class HouseInNewComplex {
 
     public void setStatus(Status status) {
         this.status = status;
-    }
-
-    @Override
-    public String toString() {
-        return "HouseInNewComplex{" +
-                "idHouse=" + idHouse +
-                ", nameOfComplex='" + nameOfComplex + '\'' +
-                ", nameOfHouse='" + nameOfHouse + '\'' +
-                ", floor=" + floor +
-                ", apartment=" + apartment +
-                ", square=" + square +
-                ", price=" + price +
-                ", fullPrice=" + fullPrice +
-                ", status=" + status +
-                '}';
     }
 }

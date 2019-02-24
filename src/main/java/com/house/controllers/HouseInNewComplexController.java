@@ -31,9 +31,10 @@ public class HouseInNewComplexController {
     public ModelAndView houseAdd(@RequestParam(value = "nameOfComplex") String nameOfComplex,
                                  @RequestParam(value = "nameOfHouse") String nameOfHouse,
                                  @RequestParam(value = "floor") int floor,
-                                 @RequestParam(value =  "apartment") int apartment,
+                                 @RequestParam(value =  "numberOfApartment") int numberOfApartment,
+                                 @RequestParam(value =  "numberOfRoom") int numberOfRoom,
                                  @RequestParam(value = "square") double square,
-                                 @RequestParam(value = "price") int price,
+                                 @RequestParam(value = "pricePerSquare") int pricePerSquare,
                                  @RequestParam(value = "fullPrice") int fullPrice,
                                  @RequestParam(value = "status") Status status,
                                  HouseInNewComplex houseInNewComplex) throws Exception{
@@ -42,9 +43,10 @@ public class HouseInNewComplexController {
             houseInNewComplex.setNameOfComplex(nameOfComplex);
             houseInNewComplex.setNameOfHouse(nameOfHouse);
             houseInNewComplex.setFloor(floor);
-            houseInNewComplex.setApartment(apartment);
+            houseInNewComplex.setNumberOfApartment(numberOfApartment);
+            houseInNewComplex.setNumberOfRoom(numberOfRoom);
             houseInNewComplex.setSquare(square);
-            houseInNewComplex.setPrice(price);
+            houseInNewComplex.setPricePerSquare(pricePerSquare);
             houseInNewComplex.setFullPrice(fullPrice);
             houseInNewComplex.setStatus(status);
             service.addHouse(houseInNewComplex);
@@ -80,9 +82,10 @@ public class HouseInNewComplexController {
                                                 @RequestParam(value = "nameOfComplex") String nameOfComplex,
                                                 @RequestParam(value = "nameOfHouse") String nameOfHouse,
                                                 @RequestParam(value = "floor") int floor,
-                                                @RequestParam(value =  "apartment") int apartment,
+                                                @RequestParam(value =  "numberOfApartment") int numberOfApartment,
+                                                @RequestParam(value =  "numberOfRoom") int numberOfRoom,
                                                 @RequestParam(value = "square") double square,
-                                                @RequestParam(value = "price") int price,
+                                                @RequestParam(value = "pricePerSquare") int pricePerSquare,
                                                 @RequestParam(value = "fullPrice") int fullPrice,
                                                 @RequestParam(value = "status") Status status,
                                                 HouseInNewComplex houseInNewComplex){
@@ -91,9 +94,10 @@ public class HouseInNewComplexController {
             houseInNewComplex.setNameOfComplex(nameOfComplex);
             houseInNewComplex.setNameOfHouse(nameOfHouse);
             houseInNewComplex.setFloor(floor);
-            houseInNewComplex.setApartment(apartment);
+            houseInNewComplex.setNumberOfApartment(numberOfApartment);
+            houseInNewComplex.setNumberOfRoom(numberOfRoom);
             houseInNewComplex.setSquare(square);
-            houseInNewComplex.setPrice(price);
+            houseInNewComplex.setPricePerSquare(pricePerSquare);
             houseInNewComplex.setFullPrice(fullPrice);
             houseInNewComplex.setStatus(status);
             houseInNewComplex.setIdHouse(idHouse);

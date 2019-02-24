@@ -42,7 +42,6 @@ public class HouseInNewComplexDAOImpl implements HouseInNewComplexDAO {
     public HouseInNewComplex getHouseByID(int idHouse){
         Session session = sessionFactory.getCurrentSession();
         HouseInNewComplex houseInNewComplex = (HouseInNewComplex) session.load(HouseInNewComplex.class, new Integer(idHouse));
-        System.out.println(houseInNewComplex);
         return houseInNewComplex;
     }
 }
