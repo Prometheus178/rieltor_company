@@ -7,7 +7,7 @@
 </head>
 <body>
 <label>Request form</label>
-<form action="/request" , method="post">
+<form  th:action="@{'/customerRequest/' + ${idHouse}}" , method="post">
     <div>
         String name; <input type="text" name="name" id="name">
         String phoneNumber; <input type="text" name="phoneNumber" id="phoneNumber">
@@ -18,5 +18,7 @@
     </div>
     <input type="submit" value="Отправить заявку">
 </form>
+
+message = <h1 th:text="${messageForCustomerOk}"></h1>
 </body>
 </html>

@@ -69,6 +69,7 @@
     <property name="annotatedClasses">
         <list>
             <value>com.house.entities.HouseInNewComplex</value>
+            <value>com.customer.entities.Customer</value>
         </list>
     </property>
     <property name="hibernateProperties">

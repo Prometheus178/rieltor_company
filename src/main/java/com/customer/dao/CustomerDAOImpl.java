@@ -1,6 +1,7 @@
 package com.customer.dao;
 
 import com.customer.entities.Customer;
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -15,6 +16,7 @@ public class CustomerDAOImpl implements CustomerDAO {
         this.sessionFactory = sessionF;
     }
     public void saveCustomerRequest(Customer customer){
-
+        Session session = sessionFactory.getCurrentSession();
+        session.save(customer);
     }
 }

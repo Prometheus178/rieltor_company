@@ -20,7 +20,10 @@ public class Customer {
     private boolean mortgage;
     private boolean agreeToDataProcessing;
     private int idHouse;
-    public Customer(String name, String phoneNumber, String email, String comment, boolean mortgage, boolean agreeToDataProcessing, HouseInNewComplex houseInNewComplex) {
+
+    public Customer(){}
+
+    public Customer(String name, String phoneNumber, String email, String comment, boolean mortgage, boolean agreeToDataProcessing, int idHouse) {
         dateTime = LocalDateTime.now();
         this.name = name;
         this.phoneNumber = phoneNumber;
@@ -28,7 +31,7 @@ public class Customer {
         this.comment = comment;
         this.mortgage = mortgage;
         this.agreeToDataProcessing = agreeToDataProcessing;
-        idHouse = houseInNewComplex.getIdHouse();
+        this.idHouse = idHouse;
     }
 
     public int getIdCustomer() {
@@ -85,5 +88,13 @@ public class Customer {
 
     public void setAgreeToDataProcessing(boolean agreeToDataProcessing) {
         this.agreeToDataProcessing = agreeToDataProcessing;
+    }
+
+    public int getIdHouse() {
+        return idHouse;
+    }
+
+    public void setIdHouse(int idHouse) {
+        this.idHouse = idHouse;
     }
 }
