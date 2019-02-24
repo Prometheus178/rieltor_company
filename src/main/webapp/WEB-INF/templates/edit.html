@@ -23,7 +23,6 @@
             Status status
             <option th:value="${houseInNewComplex.status}"></option>
             <select name="status" id="status">
-
                 <option th:each="status : ${T(com.house.entities.Status).values()}"
                         th:value="${status}"
                         th:text="${status.getValue()}">

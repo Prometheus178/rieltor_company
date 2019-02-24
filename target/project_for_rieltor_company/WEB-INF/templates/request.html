@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" media="all" href="/resources/css/main.css">
+    <title>RequestPage</title>
+</head>
+<body>
+<label>Request form</label>
+<form action="/request" , method="post">
+    <div>
+        String name; <input type="text" name="name" id="name">
+        String phoneNumber; <input type="text" name="phoneNumber" id="phoneNumber">
+        String email;<input type="email" name="email" id="email">
+        String comment;<input type="text" name="comment" id="comment">
+        boolean mortgage;<input type="checkbox" name="mortgage" id="mortgage">
+        boolean agreeToDataProcessing;<input type="checkbox" name="agreeToDataProcessing" id="agreeToDataProcessing">
+    </div>
+    <input type="submit" value="Отправить заявку">
+</form>
+</body>
+</html>

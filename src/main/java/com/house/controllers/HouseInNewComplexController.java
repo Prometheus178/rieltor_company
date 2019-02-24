@@ -59,8 +59,6 @@ public class HouseInNewComplexController {
 
     }
 
-
-
     @RequestMapping(value = "/removeHouseFromNewComplex/{idHouse}", method = RequestMethod.GET)
     public String removeHouseFromNewComplex(@PathVariable("idHouse") int idHouse,HouseInNewComplex houseInNewComplex){
         houseInNewComplex.setIdHouse(idHouse);
@@ -73,9 +71,6 @@ public class HouseInNewComplexController {
         HouseInNewComplex houseInNewComplex = service.getHouseByID(idHouse);
         modelAndView.addObject("houseInNewComplex", houseInNewComplex);
         return modelAndView;
-//        Note note = service.getById(id);
-//        model.addAttribute("note", note);
-//        return "operations/edit";
     }
     @RequestMapping(value = "/updateHouseInNewComplex/{idHouse}", method = RequestMethod.POST)
     public ModelAndView updateHouseInNewComplex(@PathVariable("idHouse") int idHouse,

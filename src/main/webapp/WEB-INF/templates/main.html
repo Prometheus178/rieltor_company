@@ -71,7 +71,7 @@
                     <td> <a th:href="@{'/edit/' + ${house.idHouse}}">edit</a></td>
                     <td> <a th:href="@{'/removeHouseFromNewComplex/' + ${house.idHouse}}">delete</a></td>
                     <div th:switch="${house.status}">
-                        <td th:case="${house.status.AVAILABLE}"> <a th:href="@{'/'}">request</a></td>
+                        <td th:case="${house.status.AVAILABLE}"> <a th:href="@{'/customer'}">request</a></td>
                     </div>
 
                 </tr>

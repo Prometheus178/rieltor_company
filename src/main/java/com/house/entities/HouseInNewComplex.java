@@ -1,7 +1,6 @@
 package com.house.entities;
 
 import javax.persistence.*;
-import java.util.UUID;
 
 @Entity
 @Table(name = "HouseInNewComplex")
@@ -112,5 +111,21 @@ public class HouseInNewComplex {
 
     public void setStatus(Status status) {
         this.status = status;
+    }
+
+    @Override
+    public String toString() {
+        return "HouseInNewComplex{" +
+                "idHouse=" + idHouse +
+                ", nameOfComplex='" + nameOfComplex + '\'' +
+                ", nameOfHouse='" + nameOfHouse + '\'' +
+                ", floor=" + floor +
+                ", numberOfApartment=" + numberOfApartment +
+                ", numberOfRoom=" + numberOfRoom +
+                ", square=" + square +
+                ", pricePerSquare=" + pricePerSquare +
+                ", fullPrice=" + fullPrice +
+                ", status=" + status +
+                '}';
     }
 }
