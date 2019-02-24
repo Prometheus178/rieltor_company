@@ -65,6 +65,43 @@ public class HouseInNewComplexController {
         service.deleteHouseByID(houseInNewComplex);
         return "redirect:/";
     }
-
+    @RequestMapping(value = "/edit/{idHouse}", method = RequestMethod.GET)
+    public ModelAndView edit(@PathVariable("idHouse") int idHouse) {
+        ModelAndView modelAndView = new ModelAndView("edit");
+        HouseInNewComplex houseInNewComplex = service.getHouseByID(idHouse);
+        modelAndView.addObject("houseInNewComplex", houseInNewComplex);
+        return modelAndView;
+//        Note note = service.getById(id);
+//        model.addAttribute("note", note);
+//        return "operations/edit";
+    }
+    @RequestMapping(value = "/updateHouseInNewComplex/{idHouse}", method = RequestMethod.POST)
+    public ModelAndView updateHouseInNewComplex(@PathVariable("idHouse") int idHouse,
+                                                @RequestParam(value = "nameOfComplex") String nameOfComplex,
+                                                @RequestParam(value = "nameOfHouse") String nameOfHouse,
+                                                @RequestParam(value = "floor") int floor,
+                                                @RequestParam(value =  "apartment") int apartment,
+                                                @RequestParam(value = "square") double square,
+                                                @RequestParam(value = "price") int price,
+                                                @RequestParam(value = "fullPrice") int fullPrice,
+                                                @RequestParam(value = "status") Status status,
+                                                HouseInNewComplex houseInNewComplex){
+        ModelAndView modelAndView = new ModelAndView("redirect:/");
+        try{
+            houseInNewComplex.setNameOfComplex(nameOfComplex);
+            houseInNewComplex.setNameOfHouse(nameOfHouse);
+            houseInNewComplex.setFloor(floor);
+            houseInNewComplex.setApartment(apartment);
+            houseInNewComplex.setSquare(square);
+            houseInNewComplex.setPrice(price);
+            houseInNewComplex.setFullPrice(fullPrice);
+            houseInNewComplex.setStatus(status);
+            houseInNewComplex.setIdHouse(idHouse);
+            service.updateHouseByID(houseInNewComplex);
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }
+        return modelAndView;
+    }
 
 }

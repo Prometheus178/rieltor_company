@@ -28,13 +28,21 @@ public class HouseInNewComplexDAOImpl implements HouseInNewComplexDAO {
         session.delete(houseInNewComplex);
     }
 
-    public HouseInNewComplex updateHouseByID(int idHouse) {
-        return null;
+    public HouseInNewComplex updateHouseByID(HouseInNewComplex houseInNewComplex) {
+        Session session = sessionFactory.getCurrentSession();
+        session.update(houseInNewComplex);
+        return houseInNewComplex;
     }
 
     public List<HouseInNewComplex> listOfHouseInNewComplex() {
         Session session = sessionFactory.getCurrentSession();
         List<HouseInNewComplex> list = session.createQuery("from HouseInNewComplex").list();
         return list;
+    }
+    public HouseInNewComplex getHouseByID(int idHouse){
+        Session session = sessionFactory.getCurrentSession();
+        HouseInNewComplex houseInNewComplex = (HouseInNewComplex) session.load(HouseInNewComplex.class, new Integer(idHouse));
+        System.out.println(houseInNewComplex);
+        return houseInNewComplex;
     }
 }

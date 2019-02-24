@@ -27,16 +27,18 @@ public class HouseInNewComplexServiceImpl implements HouseInNewComplexService {
         houseInNewComplexDAO.deleteHouseByID(houseInNewComplex);
 
     }
-
-    public HouseInNewComplex updateHouseByID(int idHouse) {
-        return null;
+    @Transactional
+    public HouseInNewComplex updateHouseByID(HouseInNewComplex houseInNewComplex) {
+        houseInNewComplexDAO.updateHouseByID(houseInNewComplex);
+        return houseInNewComplex;
     }
     @Transactional
     public List<HouseInNewComplex> listOfHouseInNewComplex() {
         return houseInNewComplexDAO.listOfHouseInNewComplex();
     }
 
+    @Transactional
     public HouseInNewComplex getHouseByID(int idHouse) {
-        return null;
+        return houseInNewComplexDAO.getHouseByID(idHouse);
     }
 }

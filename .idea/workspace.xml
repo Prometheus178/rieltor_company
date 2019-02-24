@@ -7,65 +7,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23a85b11-6cec-465c-a1c3-9dc900f17bff" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/house/controllers/HouseInNewComplexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/house/controllers/HouseInNewComplexController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/house/dao/HouseInNewComplexDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/house/dao/HouseInNewComplexDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/house/dao/HouseInNewComplexDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/house/dao/HouseInNewComplexDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/house/entities/HouseInNewComplex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/house/entities/HouseInNewComplex.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/house/services/HouseInNewComplexService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/house/services/HouseInNewComplexService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/house/services/HouseInNewComplexServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/house/services/HouseInNewComplexServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/house/controllers/HouseInNewComplexController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/house/dao/HouseInNewComplexDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/house/dao/HouseInNewComplexDAOImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/house/entities/HouseInNewComplex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/house/entities/Status.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/house/services/HouseInNewComplexService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/house/services/HouseInNewComplexServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/house/controllers/HouseInNewComplexController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/house/dao/HouseInNewComplexDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/house/dao/HouseInNewComplexDAOImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/house/entities/HouseInNewComplex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/house/entities/Status.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/house/services/HouseInNewComplexService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/house/services/HouseInNewComplexServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/aopalliance-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/aspectjrt-1.7.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/attoparser-2.0.0.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/commons-dbcp-1.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/commons-pool-1.5.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/dom4j-1.6.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/hibernate-commons-annotations-4.0.4.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/hibernate-core-4.3.5.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/hibernate-entitymanager-4.3.5.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/jandex-1.1.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/javassist-3.18.1-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/jboss-logging-3.1.3.GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/jboss-logging-annotations-1.2.0.Beta1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.0.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/mysql-connector-java-5.1.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/slf4j-api-1.6.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/spring-aop-4.2.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/spring-beans-4.2.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/spring-context-4.2.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/spring-context-support-4.2.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/spring-core-4.2.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/spring-expression-4.2.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/spring-jdbc-4.2.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/spring-orm-4.2.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/spring-tx-4.2.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/spring-web-4.2.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/spring-webmvc-4.2.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/thymeleaf-3.0.0.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/thymeleaf-spring4-3.0.0.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/unbescape-1.1.3.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/lib/xml-apis-1.0.b2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/spring/dispatcher-servlet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/house/controllers/HouseInNewComplexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/house/controllers/HouseInNewComplexController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/house/dao/HouseInNewComplexDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/house/dao/HouseInNewComplexDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/house/dao/HouseInNewComplexDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/house/dao/HouseInNewComplexDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/house/entities/HouseInNewComplex.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/house/entities/HouseInNewComplex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/house/services/HouseInNewComplexService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/house/services/HouseInNewComplexService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/house/services/HouseInNewComplexServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/house/services/HouseInNewComplexServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/house/controllers/HouseInNewComplexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/house/controllers/HouseInNewComplexController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/house/dao/HouseInNewComplexDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/house/dao/HouseInNewComplexDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/house/dao/HouseInNewComplexDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/house/dao/HouseInNewComplexDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/house/entities/HouseInNewComplex.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/house/entities/HouseInNewComplex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/house/services/HouseInNewComplexService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/house/services/HouseInNewComplexService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/house/services/HouseInNewComplexServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/classes/com/house/services/HouseInNewComplexServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/project_for_rieltor_company/WEB-INF/templates/main.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -124,40 +88,40 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="3" />
-          <entry key="html" value="1" />
-          <entry key="java" value="10" />
+          <entry key="class" value="20" />
+          <entry key="html" value="6" />
+          <entry key="java" value="18" />
           <entry key="sql" value="1" />
-          <entry key="xml" value="4" />
+          <entry key="xml" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="3" />
-          <entry key="HTML" value="1" />
-          <entry key="JAVA" value="10" />
+          <entry key="CLASS" value="20" />
+          <entry key="HTML" value="6" />
+          <entry key="JAVA" value="18" />
           <entry key="Scratch" value="1" />
-          <entry key="XML" value="4" />
+          <entry key="XML" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="40" />
-          <entry key="html" value="1428" />
-          <entry key="java" value="2726" />
+          <entry key="html" value="1721" />
+          <entry key="java" value="3236" />
           <entry key="sql" value="38" />
           <entry key="txt" value="18" />
-          <entry key="xml" value="255" />
+          <entry key="xml" value="256" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1425" />
-          <entry key="JAVA" value="2726" />
+          <entry key="HTML" value="1718" />
+          <entry key="JAVA" value="3236" />
           <entry key="PLAIN_TEXT" value="58" />
           <entry key="SQL" value="38" />
           <entry key="ThymeleafExpressions" value="3" />
-          <entry key="XML" value="255" />
+          <entry key="XML" value="256" />
         </counts>
       </usages-collector>
     </session>
@@ -167,8 +131,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/house/services/HouseInNewComplexService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
+            <state relative-caret-position="150">
+              <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -176,8 +140,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/house/dao/HouseInNewComplexDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
+            <state relative-caret-position="180">
+              <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -188,8 +152,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/house/dao/HouseInNewComplexDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+            <state relative-caret-position="189">
+              <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#477#478#0" expanded="true" />
@@ -200,54 +164,55 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.5.Final/hibernate-core-4.3.5.Final.jar!/org/hibernate/Session.class">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.2.2.RELEASE/spring-webmvc-4.2.2.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="90" column="9" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
+            <state relative-caret-position="55">
+              <caret line="402" selection-start-line="402" selection-end-line="402" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.5.Final/hibernate-core-4.3.5.Final.jar!/org/hibernate/internal/SessionImpl.class">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/dispatcher-servlet.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="763" column="37" selection-start-line="763" selection-start-column="37" selection-end-line="763" selection-end-column="37" />
+            <state relative-caret-position="340">
+              <caret line="76" column="52" selection-start-line="76" selection-start-column="52" selection-end-line="76" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.5.Final/hibernate-core-4.3.5.Final.jar!/org/hibernate/event/spi/DeleteEvent.class">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.2.2.RELEASE/spring-webmvc-4.2.2.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+            <state relative-caret-position="55">
+              <caret line="408" selection-start-line="408" selection-end-line="408" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/house/services/HouseInNewComplexServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/dataSources/bec0c3d5-b4b0-46a2-bf96-ff56323440d2.xml">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/edit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="12" column="83" selection-start-line="12" selection-start-column="83" selection-end-line="12" selection-end-column="83" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/house/controllers/HouseInNewComplexController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="39" column="64" selection-start-line="39" selection-start-column="64" selection-end-line="39" selection-end-column="64" />
+            <state relative-caret-position="435">
+              <caret line="98" column="46" selection-start-line="98" selection-start-column="46" selection-end-line="98" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -258,8 +223,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="975">
-              <caret line="65" column="63" selection-start-line="65" selection-start-column="63" selection-end-line="65" selection-end-column="63" />
+            <state relative-caret-position="182">
+              <caret line="66" column="47" selection-start-line="66" selection-start-column="47" selection-end-line="66" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -271,8 +236,8 @@
       <list>
         <option value="Enum" />
         <option value="spring-beans.schema" />
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -294,7 +259,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/house/entity/services/HouseService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/house/services/HouseService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/house/dao/HouseDAO.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/house/dao/HouseDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/house/services/HouseServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
@@ -304,13 +268,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/house/entities/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/house/entities/Status.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/dispatcher-servlet.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/house/entities/HouseInNewComplex.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/house/services/HouseInNewComplexService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/house/dao/HouseInNewComplexDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/house/services/HouseInNewComplexServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/main.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/house/dao/HouseInNewComplexDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/house/dao/HouseInNewComplexDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/house/services/HouseInNewComplexService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/house/services/HouseInNewComplexServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/house/entities/HouseInNewComplex.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/house/controllers/HouseInNewComplexController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/edit.html" />
       </list>
     </option>
   </component>
@@ -351,10 +317,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="40" />
-    <option name="y" value="72" />
-    <option name="width" value="1211" />
-    <option name="height" value="634" />
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -480,8 +446,9 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550999730966" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551014895320" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/house" />
+    <property name="last_opened_file_path" value="$USER_HOME$/contactsAge" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -594,12 +561,12 @@
       <option name="presentableId" value="Default" />
       <updated>1550916859166</updated>
       <workItem from="1550916863768" duration="28273000" />
-      <workItem from="1550998491617" duration="1226000" />
+      <workItem from="1550998491617" duration="13939000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30169000" />
+    <option name="totallyTimeSpent" value="42882000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="30" width="1366" height="738" extended-state="6" />
@@ -611,19 +578,19 @@
       <window_info id="Capture Tool" order="3" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info id="Designer" order="5" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.25378788" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.25378788" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Spring" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.32786885" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5007576" side_tool="true" weight="0.3295082" />
       <window_info anchor="bottom" id="Java Enterprise" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="4" />
       <window_info anchor="bottom" id="Version Control" order="5" sideWeight="0.49924242" weight="0.3295082" />
-      <window_info anchor="bottom" id="Application Servers" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="6" weight="0.3295082" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="9" sideWeight="0.49924242" visible="true" weight="0.2967213" />
-      <window_info anchor="bottom" id="Debug" order="10" weight="0.39836067" />
+      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.49924242" visible="true" weight="0.2967213" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.36557376" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="13" />
@@ -707,14 +674,21 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/house/controllers/HouseInNewComplexController.java</url>
+          <line>78</line>
+          <properties class="com.house.controllers.HouseInNewComplexController" method="updateHouseInNewComplex">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="110" selection-start-line="110" selection-end-line="110" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WEB-INF/spring/dispatcher-servlet.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/house/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
@@ -742,10 +716,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/dataSources/bec0c3d5-b4b0-46a2-bf96-ff56323440d2.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.5.Final/hibernate-core-4.3.5.Final.jar!/org/hibernate/Session.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="90" column="9" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.5.Final/hibernate-core-4.3.5.Final.jar!/org/hibernate/internal/SessionImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="763" column="37" selection-start-line="763" selection-start-column="37" selection-end-line="763" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.5.Final/hibernate-core-4.3.5.Final.jar!/org/hibernate/event/spi/DeleteEvent.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/house/services/HouseInNewComplexServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="40" column="52" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1366#1367#0" expanded="true" />
+            <element signature="e#1431#1432#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/house/entities/HouseInNewComplex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        <state relative-caret-position="239">
+          <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#999#1000#0" expanded="true" />
@@ -788,75 +798,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/dispatcher-servlet.xml">
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/src.zip!/java/lang/reflect/Method.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="76" column="52" selection-start-line="76" selection-start-column="52" selection-end-line="76" selection-end-column="52" />
+        <state relative-caret-position="72">
+          <caret line="497" selection-start-line="497" selection-end-line="497" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/dataSources/bec0c3d5-b4b0-46a2-bf96-ff56323440d2.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/main.html">
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/jre/lib/rt.jar!/sun/reflect/DelegatingMethodAccessorImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="975">
-          <caret line="65" column="63" selection-start-line="65" selection-start-column="63" selection-end-line="65" selection-end-column="63" />
+        <state relative-caret-position="72">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.5.Final/hibernate-core-4.3.5.Final.jar!/org/hibernate/Session.class">
+    <entry file="jar:///usr/lib/jvm/java-8-oracle/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="90" column="9" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
+        <state relative-caret-position="84">
+          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.5.Final/hibernate-core-4.3.5.Final.jar!/org/hibernate/internal/SessionImpl.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.2/commons-logging-1.2-sources.jar!/org/apache/commons/logging/impl/Jdk14Logger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="763" column="37" selection-start-line="763" selection-start-column="37" selection-end-line="763" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/4.3.5.Final/hibernate-core-4.3.5.Final.jar!/org/hibernate/event/spi/DeleteEvent.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/house/services/HouseInNewComplexServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+        <state relative-caret-position="72">
+          <caret line="221" selection-start-line="221" selection-end-line="221" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#7022#7023#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/house/services/HouseInNewComplexService.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.2.RELEASE/spring-web-4.2.2.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
+        <state relative-caret-position="130">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/house/dao/HouseInNewComplexDAO.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.2.2.RELEASE/spring-webmvc-4.2.2.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
+        <state relative-caret-position="94">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.2.RELEASE/spring-web-4.2.2.RELEASE.jar!/org/springframework/web/context/request/async/WebAsyncManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.2.RELEASE/spring-web-4.2.2.RELEASE.jar!/org/springframework/web/method/annotation/ModelFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="152" selection-start-line="152" selection-end-line="152" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.2.RELEASE/spring-web-4.2.2.RELEASE.jar!/org/springframework/web/method/support/ModelAndViewContainer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2426#2427#0" expanded="true" />
+            <element signature="e#2468#2469#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.2.2.RELEASE/spring-webmvc-4.2.2.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="453" selection-start-line="453" selection-end-line="453" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.2.2.RELEASE/spring-webmvc-4.2.2.RELEASE.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.2.2.RELEASE/spring-webmvc-4.2.2.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="402" selection-start-line="402" selection-end-line="402" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.2.2.RELEASE/spring-webmvc-4.2.2.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="408" selection-start-line="408" selection-end-line="408" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/house/dao/HouseInNewComplexDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+        <state relative-caret-position="189">
+          <caret line="42" column="40" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#477#478#0" expanded="true" />
@@ -865,13 +908,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/house/controllers/HouseInNewComplexController.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="39" column="64" selection-start-line="39" selection-start-column="64" selection-end-line="39" selection-end-column="64" />
+        <state relative-caret-position="60">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/house/dao/HouseInNewComplexDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/house/services/HouseInNewComplexService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="66" column="47" selection-start-line="66" selection-start-column="47" selection-end-line="66" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="76" column="52" selection-start-line="76" selection-start-column="52" selection-end-line="76" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/house/controllers/HouseInNewComplexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="98" column="46" selection-start-line="98" selection-start-column="46" selection-end-line="98" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" column="83" selection-start-line="12" selection-start-column="83" selection-end-line="12" selection-end-column="83" />
         </state>
       </provider>
     </entry>

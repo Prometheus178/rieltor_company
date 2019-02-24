@@ -8,7 +8,7 @@ public interface HouseInNewComplexService {
 
     void addHouse(HouseInNewComplex houseInNewComplex);
     void deleteHouseByID(HouseInNewComplex houseInNewComplex);
-    HouseInNewComplex updateHouseByID(int idHouse);
+    HouseInNewComplex updateHouseByID(HouseInNewComplex houseInNewComplex);
     List<HouseInNewComplex> listOfHouseInNewComplex();
     HouseInNewComplex getHouseByID(int idHouse);
 

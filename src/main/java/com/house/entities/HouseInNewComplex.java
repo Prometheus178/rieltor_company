@@ -104,4 +104,19 @@ public class HouseInNewComplex {
     public void setStatus(Status status) {
         this.status = status;
     }
+
+    @Override
+    public String toString() {
+        return "HouseInNewComplex{" +
+                "idHouse=" + idHouse +
+                ", nameOfComplex='" + nameOfComplex + '\'' +
+                ", nameOfHouse='" + nameOfHouse + '\'' +
+                ", floor=" + floor +
+                ", apartment=" + apartment +
+                ", square=" + square +
+                ", price=" + price +
+                ", fullPrice=" + fullPrice +
+                ", status=" + status +
+                '}';
+    }
 }
