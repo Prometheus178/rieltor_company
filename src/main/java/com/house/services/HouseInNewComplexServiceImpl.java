@@ -23,9 +23,9 @@ public class HouseInNewComplexServiceImpl implements HouseInNewComplexService {
         houseInNewComplexDAO.addHouse(houseInNewComplex);
     }
     @Transactional
-    public boolean deleteHouseByID(int idHouse) {
-        houseInNewComplexDAO.deleteHouseByID(idHouse);
-        return true;
+    public void deleteHouseByID(HouseInNewComplex houseInNewComplex) {
+        houseInNewComplexDAO.deleteHouseByID(houseInNewComplex);
+
     }
 
     public HouseInNewComplex updateHouseByID(int idHouse) {

@@ -7,7 +7,7 @@ import java.util.List;
 public interface HouseInNewComplexService {
 
     void addHouse(HouseInNewComplex houseInNewComplex);
-    boolean deleteHouseByID(int idHouse);
+    void deleteHouseByID(HouseInNewComplex houseInNewComplex);
     HouseInNewComplex updateHouseByID(int idHouse);
     List<HouseInNewComplex> listOfHouseInNewComplex();
     HouseInNewComplex getHouseByID(int idHouse);

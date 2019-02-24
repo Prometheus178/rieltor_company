@@ -23,10 +23,9 @@ public class HouseInNewComplexDAOImpl implements HouseInNewComplexDAO {
         session.save(houseInNewComplex);
     }
 
-    public boolean deleteHouseByID(int idHouse) {
+    public void deleteHouseByID(HouseInNewComplex houseInNewComplex) {
         Session session = sessionFactory.getCurrentSession();
-        session.delete(idHouse);
-        return true;
+        session.delete(houseInNewComplex);
     }
 
     public HouseInNewComplex updateHouseByID(int idHouse) {

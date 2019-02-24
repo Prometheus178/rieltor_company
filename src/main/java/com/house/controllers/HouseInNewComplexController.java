@@ -37,7 +37,7 @@ public class HouseInNewComplexController {
                                  @RequestParam(value = "fullPrice") int fullPrice,
                                  @RequestParam(value = "status") Status status,
                                  HouseInNewComplex houseInNewComplex) throws Exception{
-        ModelAndView modelAndView = new ModelAndView("main");
+        ModelAndView modelAndView = new ModelAndView("redirect:/");
         try {
             houseInNewComplex.setNameOfComplex(nameOfComplex);
             houseInNewComplex.setNameOfHouse(nameOfHouse);
@@ -60,13 +60,10 @@ public class HouseInNewComplexController {
 
 
     @RequestMapping(value = "/removeHouseFromNewComplex/{idHouse}", method = RequestMethod.GET)
-    public String removeHouseFromNewComplex(@PathVariable("idHouse") int idHouse, Model model){
-        if (service.deleteHouseByID(idHouse)){
-            model.addAttribute("removed");
-        }else {
-            model.addAttribute("something wrong");
-        }
-        return "main";
+    public String removeHouseFromNewComplex(@PathVariable("idHouse") int idHouse,HouseInNewComplex houseInNewComplex){
+        houseInNewComplex.setIdHouse(idHouse);
+        service.deleteHouseByID(houseInNewComplex);
+        return "redirect:/";
     }
 
 
