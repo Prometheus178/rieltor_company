@@ -5,5 +5,5 @@ import com.customer.entities.Customer;
 public interface CustomerDAO {
 
     void saveCustomerRequest(Customer customer);
-
+    Customer getCustomerRequestByID(Customer customer);
 }

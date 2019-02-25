@@ -18,6 +18,11 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
+    public Customer getCustomerRequestByID(Customer customer) {
+        return null;
+    }
+
+    @Override
     public void sendEmail(Customer customer, HouseInNewComplex houseInNewComplex) {
 
     }

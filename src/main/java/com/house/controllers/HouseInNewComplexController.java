@@ -27,6 +27,12 @@ public class HouseInNewComplexController {
         return modelAndView;
     }
 
+    @RequestMapping(value = "/add", method = RequestMethod.GET)
+    public ModelAndView addPage(){
+        ModelAndView modelAndView = new ModelAndView("add");
+        return modelAndView;
+    }
+
     @RequestMapping(value = "/addHouseInNewComplex" , method = RequestMethod.POST)
     public ModelAndView houseAdd(@RequestParam(value = "nameOfComplex") String nameOfComplex,
                                  @RequestParam(value = "nameOfHouse") String nameOfHouse,

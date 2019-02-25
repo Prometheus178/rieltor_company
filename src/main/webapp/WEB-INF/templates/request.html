@@ -6,6 +6,7 @@
     <title>RequestPage</title>
 </head>
 <body>
+<a th:href="@{'/'}">Main</a>
 <label>Request form</label>
 <form  th:action="@{'/customerRequest/' + ${idHouse}}" , method="post">
     <div>
