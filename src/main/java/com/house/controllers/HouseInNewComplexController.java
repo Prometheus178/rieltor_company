@@ -23,13 +23,20 @@ public class HouseInNewComplexController {
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public ModelAndView listOfHouseInNewComplex(){
         ModelAndView modelAndView = new ModelAndView("main");
-        modelAndView.addObject("listOfHouseInNewComplex", service.listOfHouseInNewComplex());
+
         return modelAndView;
     }
 
     @RequestMapping(value = "/add", method = RequestMethod.GET)
     public ModelAndView addPage(){
         ModelAndView modelAndView = new ModelAndView("add");
+        return modelAndView;
+    }
+
+    @RequestMapping(value = "/newBuilding", method = RequestMethod.GET)
+    public ModelAndView newBuildingPage(){
+        ModelAndView modelAndView = new ModelAndView("newBuilding");
+        modelAndView.addObject("listOfHouseInNewComplex", service.listOfHouseInNewComplex());
         return modelAndView;
     }
 
@@ -44,7 +51,7 @@ public class HouseInNewComplexController {
                                  @RequestParam(value = "fullPrice") int fullPrice,
                                  @RequestParam(value = "status") Status status,
                                  HouseInNewComplex houseInNewComplex) throws Exception{
-        ModelAndView modelAndView = new ModelAndView("redirect:/");
+        ModelAndView modelAndView = new ModelAndView("redirect:/newBuilding");
         try {
             houseInNewComplex.setNameOfComplex(nameOfComplex);
             houseInNewComplex.setNameOfHouse(nameOfHouse);
