@@ -25,9 +25,81 @@ public class Poster {
     private char photo;
     private int price;
     private int deposit;
-    private CommunalPayments communalPayments;
+    private boolean communalPayments;
+    private String cadastrNumber;
+    private NumberOfRooms numberOfRooms;
+    private double square;
+    private double squareOfLiving;
+    private double squareOfKitchen;
+    private int floor;
+    private Repairs repairs;
+    private boolean animal;
+    private boolean furniture;
+    private boolean furnitureInTheKitchen;
+    private boolean windowInside;
+    private boolean windowOutside;
+    private boolean balcony;
+    private boolean loggia;
+    private boolean fridge;
+    private boolean dishwasher;
+    private boolean washer;
+    private boolean tv;
+    private boolean phone;
+    private boolean bath;
+    private boolean shower;
+    private boolean conditioner;
+    private boolean internet;
+    private boolean separateBathroom;
+    private boolean combinedBathroom;
+    private boolean lift;
+    private String nameOfComplex;
+    private int yearOfConstruction;
+    private boolean ramp;
+    private String title;
 
-    public Poster(AccountType accountType, DealType dealType, RentType rentType, RealEstateType realEstateType, Living living, Commercial commercial, String address, BuildingType buildingType, String description, char photo, int price, int deposit, CommunalPayments communalPayments) {
+    public Poster(AccountType accountType,
+                  DealType dealType,
+                  RentType rentType,
+                  RealEstateType realEstateType,
+                  Living living,
+                  Commercial commercial,
+                  String address,
+                  BuildingType buildingType,
+                  String description,
+                  char photo,
+                  int price,
+                  int deposit,
+                  boolean communalPayments,
+                  String cadastrNumber,
+                  NumberOfRooms numberOfRooms,
+                  double square,
+                  double squareOfLiving,
+                  double squareOfKitchen,
+                  int floor,
+                  Repairs repairs,
+                  boolean animal,
+                  boolean furniture,
+                  boolean furnitureInTheKitchen,
+                  boolean windowInside,
+                  boolean windowOutside,
+                  boolean balcony,
+                  boolean loggia,
+                  boolean fridge,
+                  boolean dishwasher,
+                  boolean washer,
+                  boolean tv,
+                  boolean phone,
+                  boolean bath,
+                  boolean shower,
+                  boolean conditioner,
+                  boolean internet,
+                  boolean separateBathroom,
+                  boolean combinedBathroom,
+                  boolean lift,
+                  String nameOfComplex,
+                  int yearOfConstruction,
+                  boolean ramp,
+                  String title){
         dateTime = LocalDateTime.now();
         this.accountType = accountType;
         this.dealType = dealType;
@@ -42,6 +114,36 @@ public class Poster {
         this.price = price;
         this.deposit = deposit;
         this.communalPayments = communalPayments;
+        this.cadastrNumber = cadastrNumber;
+        this.numberOfRooms = numberOfRooms;
+        this.square = square;
+        this.squareOfLiving = squareOfLiving;
+        this.squareOfKitchen = squareOfKitchen;
+        this.floor = floor;
+        this.repairs = repairs;
+        this.animal = animal;
+        this.furniture = furniture;
+        this.furnitureInTheKitchen = furnitureInTheKitchen;
+        this.windowInside = windowInside;
+        this.windowOutside = windowOutside;
+        this.balcony = balcony;
+        this.loggia = loggia;
+        this.fridge = fridge;
+        this.dishwasher = dishwasher;
+        this.washer = washer;
+        this.tv = tv;
+        this.phone = phone;
+        this.bath = bath;
+        this.shower = shower;
+        this.conditioner = conditioner;
+        this.internet = internet;
+        this.separateBathroom = separateBathroom;
+        this.combinedBathroom = combinedBathroom;
+        this.lift = lift;
+        this.nameOfComplex = nameOfComplex;
+        this.yearOfConstruction = yearOfConstruction;
+        this.ramp = ramp;
+        this.title = title;
     }
 
     public int getIdPoster() {
@@ -156,23 +258,251 @@ public class Poster {
         this.deposit = deposit;
     }
 
-    @Override
-    public String toString() {
-        return "Poster{" +
-                "idPoster=" + idPoster +
-                ", dateTime=" + dateTime +
-                ", accountType=" + accountType +
-                ", dealType=" + dealType +
-                ", rentType=" + rentType +
-                ", realEstateType=" + realEstateType +
-                ", living=" + living +
-                ", commercial=" + commercial +
-                ", address='" + address + '\'' +
-                ", buildingType=" + buildingType +
-                ", description='" + description + '\'' +
-                ", photo=" + photo +
-                ", price=" + price +
-                ", deposit=" + deposit +
-                '}';
+    public boolean isCommunalPayments() {
+        return communalPayments;
+    }
+
+    public void setCommunalPayments(boolean communalPayments) {
+        this.communalPayments = communalPayments;
+    }
+
+    public String getCadastrNumber() {
+        return cadastrNumber;
+    }
+
+    public void setCadastrNumber(String cadastrNumber) {
+        this.cadastrNumber = cadastrNumber;
+    }
+
+    public NumberOfRooms getNumberOfRooms() {
+        return numberOfRooms;
+    }
+
+    public void setNumberOfRooms(NumberOfRooms numberOfRooms) {
+        this.numberOfRooms = numberOfRooms;
+    }
+
+    public double getSquare() {
+        return square;
+    }
+
+    public void setSquare(double square) {
+        this.square = square;
+    }
+
+    public double getSquareOfLiving() {
+        return squareOfLiving;
+    }
+
+    public void setSquareOfLiving(double squareOfLiving) {
+        this.squareOfLiving = squareOfLiving;
+    }
+
+    public double getSquareOfKitchen() {
+        return squareOfKitchen;
+    }
+
+    public void setSquareOfKitchen(double squareOfKitchen) {
+        this.squareOfKitchen = squareOfKitchen;
+    }
+
+    public int getFloor() {
+        return floor;
+    }
+
+    public void setFloor(int floor) {
+        this.floor = floor;
+    }
+
+    public Repairs getRepairs() {
+        return repairs;
+    }
+
+    public void setRepairs(Repairs repairs) {
+        this.repairs = repairs;
+    }
+
+    public boolean isAnimal() {
+        return animal;
+    }
+
+    public void setAnimal(boolean animal) {
+        this.animal = animal;
+    }
+
+    public boolean isFurniture() {
+        return furniture;
+    }
+
+    public void setFurniture(boolean furniture) {
+        this.furniture = furniture;
+    }
+
+    public boolean isFurnitureInTheKitchen() {
+        return furnitureInTheKitchen;
+    }
+
+    public void setFurnitureInTheKitchen(boolean furnitureInTheKitchen) {
+        this.furnitureInTheKitchen = furnitureInTheKitchen;
+    }
+
+    public boolean isWindowInside() {
+        return windowInside;
+    }
+
+    public void setWindowInside(boolean windowInside) {
+        this.windowInside = windowInside;
+    }
+
+    public boolean isWindowOutside() {
+        return windowOutside;
+    }
+
+    public void setWindowOutside(boolean windowOutside) {
+        this.windowOutside = windowOutside;
+    }
+
+    public boolean isBalcony() {
+        return balcony;
+    }
+
+    public void setBalcony(boolean balcony) {
+        this.balcony = balcony;
+    }
+
+    public boolean isLoggia() {
+        return loggia;
+    }
+
+    public void setLoggia(boolean loggia) {
+        this.loggia = loggia;
+    }
+
+    public boolean isFridge() {
+        return fridge;
+    }
+
+    public void setFridge(boolean fridge) {
+        this.fridge = fridge;
+    }
+
+    public boolean isDishwasher() {
+        return dishwasher;
+    }
+
+    public void setDishwasher(boolean dishwasher) {
+        this.dishwasher = dishwasher;
+    }
+
+    public boolean isWasher() {
+        return washer;
+    }
+
+    public void setWasher(boolean washer) {
+        this.washer = washer;
+    }
+
+    public boolean isTv() {
+        return tv;
+    }
+
+    public void setTv(boolean tv) {
+        this.tv = tv;
+    }
+
+    public boolean isPhone() {
+        return phone;
+    }
+
+    public void setPhone(boolean phone) {
+        this.phone = phone;
+    }
+
+    public boolean isBath() {
+        return bath;
+    }
+
+    public void setBath(boolean bath) {
+        this.bath = bath;
+    }
+
+    public boolean isShower() {
+        return shower;
+    }
+
+    public void setShower(boolean shower) {
+        this.shower = shower;
+    }
+
+    public boolean isConditioner() {
+        return conditioner;
+    }
+
+    public void setConditioner(boolean conditioner) {
+        this.conditioner = conditioner;
+    }
+
+    public boolean isInternet() {
+        return internet;
+    }
+
+    public void setInternet(boolean internet) {
+        this.internet = internet;
+    }
+
+    public boolean isSeparateBathroom() {
+        return separateBathroom;
+    }
+
+    public void setSeparateBathroom(boolean separateBathroom) {
+        this.separateBathroom = separateBathroom;
+    }
+
+    public boolean isCombinedBathroom() {
+        return combinedBathroom;
+    }
+
+    public void setCombinedBathroom(boolean combinedBathroom) {
+        this.combinedBathroom = combinedBathroom;
+    }
+
+    public boolean isLift() {
+        return lift;
+    }
+
+    public void setLift(boolean lift) {
+        this.lift = lift;
+    }
+
+    public String getNameOfComplex() {
+        return nameOfComplex;
+    }
+
+    public void setNameOfComplex(String nameOfComplex) {
+        this.nameOfComplex = nameOfComplex;
+    }
+
+    public int getYearOfConstruction() {
+        return yearOfConstruction;
+    }
+
+    public void setYearOfConstruction(int yearOfConstruction) {
+        this.yearOfConstruction = yearOfConstruction;
+    }
+
+    public boolean isRamp() {
+        return ramp;
+    }
+
+    public void setRamp(boolean ramp) {
+        this.ramp = ramp;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 }
