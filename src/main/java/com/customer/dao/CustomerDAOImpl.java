@@ -22,7 +22,10 @@ public class CustomerDAOImpl implements CustomerDAO {
     }
 
     @Override
-    public Customer getCustomerRequestByID(Customer customer) {
-        return null;
+    public Customer getCustomerRequestByID(int idCustomer) {
+        Session session = sessionFactory.getCurrentSession();
+        Customer customer = (Customer) session.load(Customer.class, new Integer(idCustomer));
+        System.out.println(customer);
+        return customer;
     }
 }

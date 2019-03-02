@@ -3,7 +3,9 @@ package com.customer.controllers;
 import com.customer.entities.Customer;
 import com.customer.services.CustomerService;
 import com.house.entities.HouseInNewComplex;
+import com.house.services.HouseInNewComplexService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,6 +18,9 @@ public class CustomerController {
 
     @Autowired
     CustomerService service;
+    @Qualifier("houseInNewComplexServiceImpl")
+    @Autowired
+    HouseInNewComplexService houseService;
 
     @RequestMapping(value = "/customer/{idHouse}", method = RequestMethod.GET)
     public ModelAndView customerPage(@PathVariable("idHouse") int idHouse) {
@@ -34,6 +39,9 @@ public class CustomerController {
                                         @RequestParam(value = "agreeToDataProcessing") boolean agreeToDataProcessing,
                                         Customer customer) {
         ModelAndView modelAndView = new ModelAndView("request");
+
+        HouseInNewComplex houseInNewComplex = houseService.getHouseByID(idHouse);
+
         try {
             customer.setName(name);
             customer.setPhoneNumber(phoneNumber);
@@ -43,10 +51,13 @@ public class CustomerController {
             customer.setAgreeToDataProcessing(agreeToDataProcessing);
             customer.setIdHouse(idHouse);
             service.saveCustomerRequest(customer);
+            service.sendEmail(customer, houseInNewComplex);
+
             modelAndView.addObject("messageForCustomerOk",customer.getName());
         }catch (Exception ex){
             ex.printStackTrace();
         }
+
         return modelAndView;
     }
 }

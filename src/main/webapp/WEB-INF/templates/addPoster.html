@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" media="all" href="/resources/css/main.css">
+    <title>add poster</title>
+</head>
+<body>
+<a th:href="@{'/'}">Main</a>
+<label>add poster</label>
+<div>
+<form>
+    <div>
+        private AccountType accountType;
+        <select name="accountType" id="accountType">
+            <option value="" selected disabled hidden>Выберите статус</option>
+            <option th:each="accountType:${T(com.realEstateBoard.entities.AccountType).values()}"
+                    th:value="${accountType}"
+                    th:text="${accountType.getValue()}">
+            </option>
+        </select>
+        private DealType dealType;
+        <select name="dealType" id="dealType">
+            <option th:each="dealType : ${T(com.realEstateBoard.entities.DealType).values()}"
+                    th:value="${dealType}"
+                    th:text="${dealType.getValue()}">
+            </option>
+        </select>
+        private RentType rentType;
+        <select name="rentType" id="rentType">
+            <option th:each="rentType : ${T(com.realEstateBoard.entities.RentType).values()}"
+                    th:value="${rentType}"
+                    th:text="${rentType.getValue()}">
+            </option>
+        </select>
+        private RealEstateType realEstateType;
+        <select name="realEstateType" id="realEstateType">
+            <option th:each="realEstateType : ${T(com.realEstateBoard.entities.RealEstateType).values()}"
+                    th:value="${realEstateType}"
+                    th:text="${realEstateType.getValue()}">
+            </option>
+        </select>
+        private Living living;
+        <select name="living" id="living">
+            <option th:each="living : ${T(com.realEstateBoard.entities.Living).values()}"
+                    th:value="${living}"
+                    th:text="${living.getValue()}">
+            </option>
+        </select>
+        private Commercial commercial;
+        <select name="commercial" id="commercial">
+            <option th:each="commercial : ${T(com.realEstateBoard.entities.Commercial).values()}"
+                    th:value="${commercial}"
+                    th:text="${commercial.getValue()}">
+            </option>
+        </select>
+        private String address; <input type="text" name="address" id="address">
+        private BuildingType buildingType;
+        <select name="buildingType" id="buildingType">
+            <option th:each="buildingType : ${T(com.realEstateBoard.entities.BuildingType).values()}"
+                    th:value="${buildingType}"
+                    th:text="${buildingType.getValue()}">
+            </option>
+        </select>
+        private String description; <input type="text" name="description" id="description">
+        private char photo; <input type="image" name="photo" id="photo">
+        private int price; <input type="number" name="price" id="price">
+        private int deposit; <input type="number" name="deposit" id="deposit">
+
+    </div>
+    <input type="submit" value="Save"/>
+</form>
+</div>
+</body>
+</html>

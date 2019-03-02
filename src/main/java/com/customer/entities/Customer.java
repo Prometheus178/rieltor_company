@@ -97,4 +97,19 @@ public class Customer {
     public void setIdHouse(int idHouse) {
         this.idHouse = idHouse;
     }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "idCustomer=" + idCustomer +
+                ", dateTime=" + dateTime +
+                ", name='" + name + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", email='" + email + '\'' +
+                ", comment='" + comment + '\'' +
+                ", mortgage=" + mortgage +
+                ", agreeToDataProcessing=" + agreeToDataProcessing +
+                ", idHouse=" + idHouse +
+                '}';
+    }
 }
