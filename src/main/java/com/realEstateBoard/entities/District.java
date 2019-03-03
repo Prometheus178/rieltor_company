@@ -66,6 +66,7 @@ public enum District {
     YAGITI(""),
     YAGSHA(""),
     YAKSMK("");
+
     private String value;
     District (String val) {
         this.value = val;

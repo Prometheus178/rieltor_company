@@ -19,10 +19,11 @@ public class Poster {
     private RealEstateType realEstateType;
     private Living living;
     private Commercial commercial;
+    private District district;
     private String address;
     private BuildingType buildingType;
     private String description;
-    private char photo;
+    private byte[] photo;
     private int price;
     private int deposit;
     private boolean communalPayments;
@@ -57,16 +58,19 @@ public class Poster {
     private boolean ramp;
     private String title;
 
+    public Poster(){}
+
     public Poster(AccountType accountType,
                   DealType dealType,
                   RentType rentType,
                   RealEstateType realEstateType,
                   Living living,
                   Commercial commercial,
+                  District district,
                   String address,
                   BuildingType buildingType,
                   String description,
-                  char photo,
+                  byte[] photo,
                   int price,
                   int deposit,
                   boolean communalPayments,
@@ -107,6 +111,7 @@ public class Poster {
         this.realEstateType = realEstateType;
         this.living = living;
         this.commercial = commercial;
+        this.district = district;
         this.address = address;
         this.buildingType = buildingType;
         this.description = description;
@@ -210,6 +215,14 @@ public class Poster {
         this.commercial = commercial;
     }
 
+    public District getDistrict() {
+        return district;
+    }
+
+    public void setDistrict(District district) {
+        this.district = district;
+    }
+
     public String getAddress() {
         return address;
     }
@@ -234,11 +247,11 @@ public class Poster {
         this.description = description;
     }
 
-    public char getPhoto() {
+    public byte[] getPhoto() {
         return photo;
     }
 
-    public void setPhoto(char photo) {
+    public void setPhoto(byte[] photo) {
         this.photo = photo;
     }
 
