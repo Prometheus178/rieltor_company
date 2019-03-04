@@ -103,7 +103,17 @@
             <artifactId>mail</artifactId>
             <version>1.4</version>
         </dependency>
+
+        <!--design-->
+
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>bootstrap</artifactId>
+            <version>4.1.0</version>
+        </dependency>
+
     </dependencies>
+
 
     <build>
         <finalName>${project.artifactId}</finalName>

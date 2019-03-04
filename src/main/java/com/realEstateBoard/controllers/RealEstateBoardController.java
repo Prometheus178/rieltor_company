@@ -127,4 +127,12 @@ public class RealEstateBoardController {
 
     }
 
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public ModelAndView listOfPoster(){
+        ModelAndView modelAndView = new ModelAndView("main");
+        modelAndView.addObject("listOfPoster", service.listOfPoster());
+        return modelAndView;
+    }
+
+
 }

@@ -19,23 +19,23 @@ public class RealEstateBoardServiceImpl implements  RealEstateBoardService{
         realEstateBoardDAO.addPoster(poster);
     }
 
-    @Override
+    @Transactional
     public void deletePosterByID(Poster poster) {
-
+        realEstateBoardDAO.deletePosterByID(poster);
     }
 
-    @Override
+    @Transactional
     public Poster updatePosterById(Poster poster) {
-        return null;
+        return realEstateBoardDAO.updatePosterById(poster);
     }
 
-    @Override
+    @Transactional
     public List<Poster> listOfPoster() {
-        return null;
+        return realEstateBoardDAO.listOfPoster();
     }
 
-    @Override
+    @Transactional
     public Poster getPosterByID(int idPoster) {
-        return null;
+        return realEstateBoardDAO.getPosterByID(idPoster);
     }
 }

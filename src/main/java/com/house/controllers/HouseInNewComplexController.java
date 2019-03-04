@@ -20,12 +20,7 @@ public class HouseInNewComplexController {
     @Autowired
     private HouseInNewComplexService service;
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public ModelAndView listOfHouseInNewComplex(){
-        ModelAndView modelAndView = new ModelAndView("main");
 
-        return modelAndView;
-    }
 
     @RequestMapping(value = "/add", method = RequestMethod.GET)
     public ModelAndView addPage(){

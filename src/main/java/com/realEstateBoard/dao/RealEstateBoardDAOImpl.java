@@ -1,5 +1,6 @@
 package com.realEstateBoard.dao;
 
+import com.house.entities.HouseInNewComplex;
 import com.realEstateBoard.entities.Poster;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -25,21 +26,31 @@ public class RealEstateBoardDAOImpl implements RealEstateBoardDAO{
 
     @Override
     public void deletePosterByID(Poster poster) {
+        Session session = sessionFactory.getCurrentSession();
+        session.delete(poster);
 
     }
 
     @Override
     public Poster updatePosterById(Poster poster) {
-        return null;
+        Session session = sessionFactory.getCurrentSession();
+        session.update(poster);
+        return poster;
     }
 
     @Override
     public List<Poster> listOfPoster() {
-        return null;
+
+        Session session = sessionFactory.getCurrentSession();
+        List<Poster> list = session.createQuery("from Poster").list();
+        return list;
     }
 
     @Override
     public Poster getPosterByID(int idPoster) {
-        return null;
+        Session session = sessionFactory.getCurrentSession();
+        Poster poster = (Poster) session.load(Poster.class, new Integer(idPoster));
+        System.out.println(poster);
+        return poster;
     }
 }

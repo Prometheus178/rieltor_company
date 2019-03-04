@@ -2,21 +2,14 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link rel="stylesheet" type="text/css" media="all" href="/resources/css/main.css">
+    <link rel="stylesheet" type="text/css" media="all" href="/resources/css/header.css">
     
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<9264eb43-89ca-45c7-baf8-66bc31465c8d>&lang=ru_RU" type="text/javascript">
-    </script>
-    <script src="/resources/js/custom_search_results.js" type="text/javascript"></script>
-    <style>
-        html, body, #map {
-            width: 100%; height: 100%; padding: 0; margin: 0;
-        }
-    </style>
+
     <title>MainPage</title>
 </head>
 <body>
 
-<header>
+<header class="container" >
     <a th:href="@{'/'}">Главная</a>
     <a th:href="@{'/add'}">Добавить дом</a>
     <hr/>
@@ -26,10 +19,35 @@
 
 <hr/>
 <div>
+
     <label> поисковая строка </label>
 </div>
-<!--<div id="map" style="width:600px; height:400px"></div>-->
+
 <hr/>
+<div>
+    <label>list</label>
+    <div th:if="${not #lists.isEmpty(listOfPoster)}">
+        <table>
+            <thead>
+            <tr>
+                <th> title</th>
+                <th> price</th>
+                <th>district</th>
+                <th> numberOfRooms</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="poster : ${listOfPoster}">
+                <td th:text="${poster.title}">title</td>
+                <td th:text="${poster.price}">price</td>
+                <td th:text="${poster.district}">district</td>
+                <td th:text="${poster.numberOfRooms}">numberOfRooms</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
 
 </body>
 </html>
